@@ -1,0 +1,49 @@
+{
+  "name": "hftracker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "index.tsx",
+  "author": {
+    "name": "Thomas Carmichael",
+    "email": "ThomasCarmichael@pm.me",
+    "url": "https://tmcarmichael.com/"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "dev": "rspack serve --config rspack.config.js",
+    "build": "rspack build --config rspack.config.js",
+    "ci": "pnpm install --frozen-lockfile",
+    "clean:cache": "pnpm store prune && pnpm cache clean --all",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.4",
+    "@reduxjs/toolkit": "^2.6.1",
+    "graphql": "^16.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.3.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.2.8",
+    "@rspack/core": "^1.2.8",
+    "@tailwindcss/postcss": "^4.0.13",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-router-dom": "^5.3.3",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^4.0.0",
+    "swc-loader": "^0.2.6",
+    "tailwindcss": "^4.0.13",
+    "typescript": "^5.8.2"
+  }
+}
